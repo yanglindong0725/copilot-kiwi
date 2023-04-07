@@ -1,0 +1,122 @@
+/* 全局样式 */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+@media (max-width: 767px) {
+  /* 移动设备样式 */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .mobile-menu-button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+/* 针对移动端设备的样式 */
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+/* 内容区样式 */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.feature {
+  transition: all 0.3s ease-out;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+/* 自定义主题样式 */
+
+.bg-orange-600 {
+  background-color: #ff7f50;
+}
+
+.btn {
+  padding: 8px 16px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ff6348;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #ff6348;
+}
+
+.btn-primary:hover {
+  background-color: #ff7f50;
+}
+
+.logo {
+  margin-left: 16px;
+}
+
+/* 移动设备样式 */
+
+.mobile-menu a {
+  font-size: 28px;
+}
+
+/* 特性区域样式 */
+
+.features {
+  background-color: #f6f6f6;
+  padding: 48px 0;
+}
+
+.features h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.features .feature h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.features .feature p {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+/* 底部样式 */
+
+footer {
+  background-color: #333;
+}
